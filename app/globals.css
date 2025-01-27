@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+  background-color: #FDFFFB;
+  font-family: 'Inter';
+}
+
+.nav{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.logo{
+  font-weight: 800;
+  color: #161617;
+  font-size: 3rem;
+}
+
+.loader {
+    border: 4px solid #e5e7eb; /* Light gray */
+    border-top: 4px solid #3b82f6; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.card{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5 rem;
+  font-size: 1rem;
+  color: rgb(102, 98, 98);
+  font-weight: 400;
+  align-items: center;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
